@@ -1,15 +1,15 @@
-# SparseTT
-The official implementation for paper "[SparseTT: Visual Tracking with Sparse Transformers](https://arxiv.org/abs/2205.03776)". 
+# TATrack
+The official implementation for paper "A Target-Aware Transformer for Object Tracking". 
 
-**This paper is accepted by IJCAI2022 as a long oral presentation**.
+![](./Framework3.png)
 
 ## Installation
 * Prepare Anaconda, CUDA and the corresponding toolkits. CUDA version required: 11.3.
 
 * Create a new conda environment and activate it.
 ```Shell
-conda create -n SparseTT python=3.7 -y
-conda activate SparseTT
+conda create -n TATrack python=3.7 -y
+conda activate TATrack
 ```
 
 * Install `pytorch` and `torchvision`.
@@ -48,8 +48,8 @@ pip install -r requirements.txt
 
 * Download the pretrained models.
     
-    :paperclip: [GOT-10k model](https://drive.google.com/file/d/1YJXPVLCqUjffdV7BdodnBHLafk6m5-US/view?usp=sharing)
-    :paperclip: [fulldata model](https://drive.google.com/file/d/1uNg4Yof5uT2d8ELbl2fMp63D3Hj8OyLS/view?usp=sharing)
+    :paperclip: [GOT-10k model]()
+    :paperclip: [fulldata model]()
 
 
 * Set the pretrained model path for the item `pretrain_model_path` in the configuration file, then run shell commands.
@@ -60,26 +60,26 @@ pip install -r requirements.txt
 
 **GOT-10k**
 ```Shell
-python main/test.py --config experiments/sparsett/test/got10k/sparsett_swin_got10k.yaml
+python main/test.py --config experiments/tatrck/test/got10k/sparsett_swin_got10k.yaml
 ```
 **LaSOT**
 ```Shell
-python main/test.py --config experiments/sparsett/test/lasot/sparsett_swin_lasot.yaml
+python main/test.py --config experiments/tatrck/test/lasot/sparsett_swin_lasot.yaml
 ```
 
 **TrackingNet**
 ```Shell
-python main/test.py --config experiments/sparsett/test/trackingnet/sparsett_swin_trackingnet.yaml
+python main/test.py --config experiments/tatrck/test/trackingnet/sparsett_swin_trackingnet.yaml
 ```
 
 **UAV123**
 ```Shell
-python main/test.py --config experiments/sparsett/test/uav123/sparsett_swin_uav123.yaml
+python main/test.py --config experiments/tatrck/test/uav123/sparsett_swin_uav123.yaml
 ```
 
 **OTB2015**
 ```Shell
-python main/test.py --config experiments/sparsett/test/otb2015/sparsett_swin_otb2015.yaml
+python main/test.py --config experiments/tatrck/test/otb2015/sparsett_swin_otb2015.yaml
 ```
 
 ## Training
@@ -89,16 +89,16 @@ python main/test.py --config experiments/sparsett/test/otb2015/sparsett_swin_otb
 
 **GOT-10k**
 ```Shell
-python main/train.py --config experiments/sparsett/train/got10k/sparsett_swin_train_got10k.yaml
+python main/train.py --config experiments/tatrck/train/got10k/sparsett_swin_train_got10k.yaml
 ```
 
 **fulldata**
 ```Shell
-python main/train.py --config experiments/sparsett/train/fulldata/sparsett_swin_train_fulldata.yaml
+python main/train.py --config experiments/tatrck/train/fulldata/sparsett_swin_train_fulldata.yaml
 ```
 
 ## Testing Results
-Click [here](https://drive.google.com/drive/folders/1wss9kGeQCGYDw4klkiHRZAvyZUYhCtlA?usp=sharing) to download all testing results that includes:
+Click [here]() to download all testing results that includes:
 * LaSOT
 * TrackingNet
 * GOT-10k
@@ -117,15 +117,10 @@ This repository is built on the top of the single object tracking framework [vid
 
 ## References
 ```Bibtex
-@article{fu2022sparsett,
-  title={SparseTT: Visual Tracking with Sparse Transformers},
-  author={Fu, Zhihong and Fu, Zehua and Liu, Qingjie and Cai, Wenrui and Wang, Yunhong},
-  booktitle={IJCAI},
-  year={2022}
-}
+
 ```
 
 ## Contact
-* Zhihong Fu[@fzh0917](https://github.com/fzh0917)
+* Kai Huang
 
 If you have any questions, just create issues or email me:smile:.
