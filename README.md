@@ -60,41 +60,41 @@ pip install -r requirements.txt
 
 **GOT-10k**
 ```Shell
-python main/test.py --config experiments/tatrck/test/got10k/sparsett_swin_got10k.yaml
+python main/test.py --config experiments/tatrck/test/got10k/tatrack_swin_got10k.yaml
 ```
 **LaSOT**
 ```Shell
-python main/test.py --config experiments/tatrck/test/lasot/sparsett_swin_lasot.yaml
+python main/test.py --config experiments/tatrck/test/lasot/tatrack_swin_lasot.yaml
 ```
 
 **TrackingNet**
 ```Shell
-python main/test.py --config experiments/tatrck/test/trackingnet/sparsett_swin_trackingnet.yaml
+python main/test.py --config experiments/tatrck/test/trackingnet/tatrack_swin_trackingnet.yaml
 ```
 
 **UAV123**
 ```Shell
-python main/test.py --config experiments/tatrck/test/uav123/sparsett_swin_uav123.yaml
+python main/test.py --config experiments/tatrck/test/uav123/tatrack_swin_uav123.yaml
 ```
 
 **OTB2015**
 ```Shell
-python main/test.py --config experiments/tatrck/test/otb2015/sparsett_swin_otb2015.yaml
+python main/test.py --config experiments/tatrck/test/otb2015/tatrack_swin_otb2015.yaml
 ```
 
 ## Training
 * Prepare the datasets as described in the last subsection.
-* Download the pretrained backbone model from [here](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth), and put it in the `SparseTT/models/swin/` directory.
+* Download the pretrained backbone model from [here](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth), and put it in the `TATrack/models/swin/` directory.
 * Run the shell command.
 
 **GOT-10k**
 ```Shell
-python main/train.py --config experiments/tatrck/train/got10k/sparsett_swin_train_got10k.yaml
+python main/train.py --config experiments/tatrck/train/got10k/tatrack_swin_train_got10k.yaml
 ```
 
 **fulldata**
 ```Shell
-python main/train.py --config experiments/tatrck/train/fulldata/sparsett_swin_train_fulldata.yaml
+python main/train.py --config experiments/tatrck/train/fulldata/tatrack_swin_train_fulldata.yaml
 ```
 
 ## Testing Results
